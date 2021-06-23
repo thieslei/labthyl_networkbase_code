@@ -8,10 +8,10 @@ resource "aws_route_table" "rt_default_public" {
         cidr_block = "0.0.0.0/0"
         gateway_id = aws_internet_gateway.igw_vpc_main.id
     }
-  #  tags = {
-   #     Name = "rt_default_public"
-    #    project = var.project_name
-    #}
+    
+    tags = {
+         Name    = "route-public-${var.project}"
+    }
 }
 
 

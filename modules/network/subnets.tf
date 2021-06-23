@@ -8,10 +8,10 @@ resource "aws_subnet" "subnet_public_a" {
     availability_zone = "us-east-1a"
     cidr_block        = "10.10.0.0/24"
     map_public_ip_on_launch = true
-  #  tags = {
-   #     Name = "subnet_public_a"
-    #    project = var.project_name
-  #}
+    
+    tags = {
+         Name    = "subnet-public-a-${var.project}"
+    }
 }
 
 resource "aws_subnet" "subnet_public_c" {
@@ -19,9 +19,8 @@ resource "aws_subnet" "subnet_public_c" {
     availability_zone = "us-east-1c"
     cidr_block        = "10.10.1.0/24"
     map_public_ip_on_launch = true
-#    tags = {
- #       Name = "subnet_public_c"
-  #      project = var.project_name
-#
- # }
+    
+    tags = {
+         Name    = "subnet-public-c-${var.project}"
+    }
 }
