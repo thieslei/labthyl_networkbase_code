@@ -3,6 +3,6 @@ terraform{
         bucket = "terraform-state-thieslei"
         region = "us-east-1"
         encrypt = true
-        key    = "$project/terraform.tfstate"
+        key    = "labthyl_networkbase_code/terraform.tfstate"
     }
 }
