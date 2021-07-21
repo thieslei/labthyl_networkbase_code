@@ -9,7 +9,12 @@ provider "aws" {
   }
 }
 
-module "network" {
-  source       = "./modules/network"
+module "vpc01" {
+  source       = "./modules/vpc01"
+  project = var.project
+}
+
+module "vpc02" {
+  source       = "./modules/vpc02"
   project = var.project
 }
