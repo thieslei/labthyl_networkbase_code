@@ -1,26 +1,11 @@
-variable project {
+variable "project" {
     type = string
-    default = ""
+    description = "Nome do projeto que está sendo criado, utilizado para realizar os TAGs em todos os recursos"
 }
 
-variable env {
+variable "env" {
     type = string
-    default = ""
-}
-
-variable region {
-    type = string
-    default = ""
-}
-
-variable account_alias {
-    type = string
-    default = ""
-}
-
-variable assume_role {
-    type = string
-    default = ""
+    description = "Nome do projeto que está sendo criado, utilizado para realizar os TAGs em todos os recursos"
 }
 
 variable "subnet_public_a_block" {
