@@ -1,26 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-  
-pipeline {
-    agent any
     
     stages {
         stage('Teste') {
@@ -52,6 +32,15 @@ pipeline {
             }
         }
         stage('Deploy') {
+            steps {
+                sh 'echo "Hello World"'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
+            }
+        }
+        stage('Clean') {
             steps {
                 sh 'echo "Hello World"'
                 sh '''
