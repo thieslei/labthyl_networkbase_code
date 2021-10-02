@@ -6,7 +6,7 @@ pipeline {
         stage('Approval'){
             steps{
                 script {
-                    timeout(time: 10, unit: 'MINUTES') {
+                    timeout(time: 1, unit: 'MINUTES') {
                         input "Do you really want to start this build?"
                     }
                 }
