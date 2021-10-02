@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent docker
+    agent {docker}
     
     stages {
         stage('Approval'){
@@ -14,7 +14,11 @@ pipeline {
         }
         
         stage('Tests') {
-            agent {docker { image 'hashicorp/terraform' }}
+            agent {
+                docker {
+                    image 'hashicorp/terraform'
+                }
+            }
             steps {
                 sh 'echo "Hello World"'
                 sh '''
