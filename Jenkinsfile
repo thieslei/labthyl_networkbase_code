@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent any
+    agent docker
     
     stages {
         stage('Approval'){
@@ -14,10 +14,11 @@ pipeline {
         }
         
         stage('Tests') {
+            agent {docker { image 'hashicorp/terraform' }}
             steps {
                 sh 'echo "Hello World"'
                 sh '''
-                    echo "Multiline shell steps works too"
+                    terraform --version
                 '''
             }
         }
