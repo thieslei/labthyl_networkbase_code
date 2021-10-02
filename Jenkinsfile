@@ -1,9 +1,15 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
+
+
     
     stages {
-        stage('Teste') {
+        stage('Deploy approval')timeout(time: 60, unit: 'SECONDS'){
+            input "Deploy to prod?"
+        }
+        
+        stage('Tests') {
             steps {
                 sh 'echo "Hello World"'
                 sh '''
@@ -22,6 +28,7 @@ pipeline {
                 '''
             }
         }
+        
         stage('Build') {
             steps {
                 sh 'echo "Hello World"'
@@ -31,6 +38,7 @@ pipeline {
                 '''
             }
         }
+        
         stage('Deploy') {
             steps {
                 sh 'echo "Hello World"'
@@ -40,6 +48,7 @@ pipeline {
                 '''
             }
         }
+        
         stage('Clean') {
             steps {
                 sh 'echo "Hello World"'
