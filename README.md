@@ -28,4 +28,4 @@ Criação de infraestrutura de rede base para criação dos projetos TF do labor
 <BR>
 
 ## ⚙️ Deploy <a name = "deploy"></a>
-Deploy realizado via AWS Code Pipeline. Pipeline Name = tf-cicd-labthyl-networkbase.
+Deploy realizado via AWS Code Pipeline. Pipeline Name = tf-cicd-labthyl-networkbase na conta "INFRA SERVICES".
