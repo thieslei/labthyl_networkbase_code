@@ -3,7 +3,7 @@
 ## 📝 Conteúdo
 
 - [Objetivo](#aboutit)
-- [Recursos](#Resources)
+- [Recursos](#resources)
 - [Organização](#organization)
 - [Deploy](#deploy)
 
@@ -14,7 +14,7 @@ Criação de infraestrutura de rede base para criação dos projetos em Terrafor
 
 <BR>
 
-## ⏺️ Quais recursos serão criados com esse código <a name = "Resources"></a>
+## ⏺️ Quais recursos serão criados com esse código <a name = "resources"></a>
 - VPC
 - Internet GTW
 - Routes
