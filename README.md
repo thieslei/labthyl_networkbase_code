@@ -18,7 +18,8 @@ Criação de infraestrutura de rede base para criação dos projetos em Terrafor
 - VPC
 - Internet GTW
 - Routes
-- Subnets Publicas
+- Subnets
+- Internet Gateway
 
 <BR>
 
