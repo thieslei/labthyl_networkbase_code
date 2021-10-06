@@ -10,7 +10,7 @@
 <BR>
 
 ## ⭕️ Objetivo <a name = "aboutit"></a>
-Criação de infraestrutura de rede base para criação dos projetos TF do laboratório.
+Criação de infraestrutura de rede base para criação dos projetos em Terraform do laboratório.
 
 <BR>
 
