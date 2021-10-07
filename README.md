@@ -30,7 +30,8 @@ FLOW
 - DEV -> develop
 - STG -> release
 - PRD -> main
-VPC Block
+
+VPC Blocks
 - DEV -> 10.10.0.0/16
 - STG -> 10.11.0.0/16
 - PRD -> 10.100.0.0/16
