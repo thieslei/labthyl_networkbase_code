@@ -1,3 +1,9 @@
-#output "instance_instance_A_public_ip" {
-#  value = module.ec2_apache.ec2-apache_A.public_ip
-#}
+output "vpc_id" {
+  description = "List of IDs of public subnets"
+  value       = module.vpc.vpc_id
+}
+
+output "subnet_ids" {
+  description = "List of IDs of public subnets"
+  value       = module.vpc.public_subnets
+}
