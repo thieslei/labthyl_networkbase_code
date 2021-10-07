@@ -20,6 +20,7 @@ Criação de infraestrutura de rede base para criação dos projetos em Terrafor
 - Routes
 - Subnets
 - Internet Gateway
+- NAT
 
 <BR>
 
