@@ -4,6 +4,7 @@
 
 - [Objetivo](#aboutit)
 - [Recursos](#resources)
+- [Detalhes do Ambiente](#ambiente)
 - [Organização](#organization)
 - [Deploy](#deploy)
 
@@ -21,6 +22,19 @@ Criação de infraestrutura de rede base para criação dos projetos em Terrafor
 - Subnets
 - Internet Gateway
 - NAT
+
+<BR>
+
+## 🔁️ Detalhes do Ambientes <a name = "ambiente"></a>
+FLOW
+- DEV -> develop
+- STG -> release
+- PRD -> main
+VPC Block
+- DEV -> 10.10.0.0/16
+- STG -> 10.11.0.0/16
+- PRD -> 10.100.0.0/16
+
 
 <BR>
 
