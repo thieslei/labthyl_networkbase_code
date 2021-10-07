@@ -1,5 +1,5 @@
 #Vars Base
-project = "SBF_networkbase_code"
+project = "labthyl_networkbase_code"
 env = "DEV"
 
 #Provider DEV
